@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<style type="text/css">
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="wrapper">
+    <article class="main">
+        <div id="count"></div>
+        <div class="popup-container" id="popup1">
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div id="popuptext"></div>
+                    <p><a href="javascript:void(0)" id="popup1close">Close</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="total"><div id="numRight"></div></div>
+
+        <div id="wrapper">
+            <h1>
+                <span id="num1"></span>
+                <span id="sign"></span>
+                <span id="num2"></span>
+                =
+                <input id="userAnswer" type="number" />
+            </h1><a href="javascript:void(0)" id="popup1open">
+                <button id="submit">Solve</button>
+            </a>
+            <button id="reset">Next</button>
+            <fieldset id="chooseSign">
+                <input type="radio" name="operator" id="add" checked="checked" /><label for="add">+</label>
+                <input type="radio" name="operator" id="subtract" /><label for="subtract">&ndash;</label>
+                <input type="radio" name="operator" id="multiply" /><label for="multiply">X</label>
+                <input type="radio" name="operator" id="divide" /><label for="divide">&divide;</label>
+            </fieldset>
+        </div>
+    </article>
+    <aside class="aside aside-1"></aside>
+    <aside class="aside aside-2">
+
+        <div class="space"></div>
+
+
+   
+        @foreach (var g in @ViewBag.UserName)
+        {
+            <pre>@g.Name</pre>
+        }
+
+        <div class="sidenav"><li>Maths</div></li>
+        <div class="sidenav"><a property="url" href="input_output.html"><li>Read</div></li></a>
+        <div class="sidenav"><a property="url" itemprop="url" href="conditionals.html"><li>Practice</div></li></a>
+        <div class="sidenav"><a property="url" itemprop="url" href="recursions.html"> <li>Help</div></li></a>
+
+        <a class="logout" href="#">Log Out</a>
+</div>
+    </aside>
+</div>

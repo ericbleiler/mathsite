@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+<style type="text/css">
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="wrapper">
+
+    <article></article>
+    <aside class="aside aside-1">
+
+        <div class="space"></div>
+        UserName
+        <div class="space"></div>
+
+
+        <!--
+           foreach (var g in ViewBag.UserName)
+           {
+               <pre>g.Name</pre>
+           }
+        -->
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='#'><span>Home</span></a></li>
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 1</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href="Addition1"><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction1'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication1'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division1'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 2</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href='Addition2'><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction2'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication2'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division2'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 3</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href='Addition3'><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction3'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication3'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division3'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class='last'><a href='#'><span>Read</span></a></li>
+            </ul>
+            </nav><!-- /c-menu slide-left -->
+
+        </div>
+
+
+        <a class="logout" href="#">Log Out</a>
+
+
+</div>
+    </aside>
+<aside class="aside aside-2"></aside>
+    </div>
+
+</div>
+
+
+<input id="level" type="text" value="1" style="visibility: hidden;" />

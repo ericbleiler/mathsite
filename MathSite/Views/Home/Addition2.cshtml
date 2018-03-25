@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "Addition";
+}
+
+
+<style type="text/css">
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="wrapper">
+
+    <article class="main">
+        <div id="toplabel">Level 2 Addition</div>
+        <fieldset id="chooseSign">
+            <input type="radio" name="operator" id="add" checked="checked" /><label for="add">+</label>
+
+        </fieldset>
+        <div id="count"></div>
+        <div class="popup-container" id="popup1">
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div id="popuptext"></div>
+                    <button id="popup1close">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="total"><div id="numRight"></div></div>
+
+        <div id="wrapper">
+            <h1>
+
+    <form action="AddAddition">
+                    <span id="num1" type="text"></span>
+                    <span id="sign"></span>
+                    <span id="num2" type="text"></span>
+                    =
+                    <input id="userAnswer" type="text" name="userAnswer" />
+            </h1>
+            <a href="javascript:void(0)" id="popup1open"></a>
+            <button id="submit">Solve</button>
+            <button id="reset">Next</button><br />
+            <center><input type="submit" id="enter" /></center>
+
+            <input id="number1" type="text" name="num1" style="visibility:hidden;" />
+            <input id="number2" type="text" name="num2" style="visibility:hidden;" />
+            <input id="user" type="text" name="user" style="visibility:hidden;" />
+            <input id="correct" type="text" name="correct" style="visibility:hidden;" />
+            <input id="questionNum" type="text" name="questionNum" style="visibility:hidden;" />
+            <input id="userName" type="text" name="userName" value="userName" style="visibility:hidden" />
+            <input id="addLevel" type="text" name="addLevel" value="2" style="visibility:hidden" />
+
+
+
+    </form>
+
+        </div>
+    </article>
+    <aside class="aside aside-1">
+
+        <div class="space"></div>
+        UserName
+        <div class="space"></div>
+
+
+        <!--
+               foreach (var g in ViewBag.UserName)
+               {
+                   <pre>g.Name</pre>
+               }
+            -->
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='#'><span>Home</span></a></li>
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 1</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href="Addition1"><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction1'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication1'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division1'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 2</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href='Addition2'><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction2'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication2'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division2'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li class='active has-sub'>
+                    <a href='#'><span>Level 3</span></a>
+                    <ul>
+                        <li class='has-sub'>
+                            <a href='Addition3'><span>Addition</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Subtraction3'><span>Subtraction</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Multiplication3'><span>Multiplication</span></a>
+
+                        </li>
+                        <li class='has-sub'>
+                            <a href='Division3'><span>Division</span></a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class='last'><a href='#'><span>Read</span></a></li>
+            </ul>
+        </div>
+
+
+        <a class="logout" href="#">Log Out</a>
+
+
+</div>
+    </aside>
+<aside class="aside aside-2"></aside>
+    </div>
+
+</div>
+
+
+<input id="level" type="text" value="2" style="visibility: hidden;" />
